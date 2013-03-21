@@ -1,0 +1,16 @@
+div {
+	height: 200px;
+	width: 200px;
+}
+
+div#red {
+	background-color: #FF6666;
+}
+
+div#yellow {
+	background-color: #FFFF99;
+}
+
+div#blue {
+	background-color: #00CCFF;
+}

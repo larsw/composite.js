@@ -1,0 +1,16 @@
+{
+  "name": "composite.js",
+  "version": "0.0.1",
+  "description": "PoC on-demand loading of client-side scripts from (logical) services",
+  "main": "app.js",
+  "dependencies": {
+    "connect": "~2.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Lars Wilhelmsen <lars@sral.org>",
+  "license": "Apache Public License 2.0"
+}
