@@ -5,6 +5,7 @@
 
 * Use [bower](http://twitter.github.com/bower/) to install client-side dependencies (currently jQuery), or download [jQuery](http://jquery.com/download/) and place in components/jquery.
 * You can fire up a simple web server with [node.js](http://nodejs.org/) - or just drop the folder into your favorite web server. If you go down the node.js path, run "npm install" inside the folder to pull down dependencies (currently only the [connect](http://www.senchalabs.org/connect/) middleware).
+* after "npm install" - run "node app.js" - it should fire up a web server on localhost:8888 if the port is available.
 
 ## Other links of interest
 
