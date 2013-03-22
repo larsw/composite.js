@@ -2,7 +2,9 @@
   "name": "composite.js",
   "version": "0.0.1",
   "dependencies": {
-    "jquery": "~1.9.1"
+    "jquery": "~1.9.1",
+    "knockout.js": "~2.2.0",
+    "event_emitter": "~0.0.8"
   },
   "ignore": [
     "**/.*",

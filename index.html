@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript" src="components/jquery/jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="components/knockout.js/knockout.js"></script>
+    <script type="text/javascript" src="components/knockout.mapping/knockout.mapping.js"></script>
+    <script type="text/javascript" src="components/jquery/jquery.js"></script>
+    <script type="text/javascript" src="components/event_emitter/event_emitter.js"></script>
   </head>
   <body>
-    <div id="red"></div>
+    <div id="inventory"></div>
     <div id="yellow"></div>
-    <div id="blue"></div>
+    <div id="pricing"></div>
+    <div id="composite">
+      Products &amp; current prices
+      <table>
+        <thead>
+          <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Unit price</td>
+          </tr>
+        </thead>
+        <tbody data-bind="foreach: inventory.products()">
+         <tr>
+            <td><span data-bind="text: id"></span></td>
+            <td><span data-bind="text: name"></span></td>
+            <td style="text-align: right;"><span data-bind="text: $root.pricing()[$data.id()]"></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <script type="text/javascript" src="boot.js"></script>
+    <script type="text/javascript" src="boot.js">
+    </script>
   </body>
 </html>

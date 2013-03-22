@@ -1,16 +1,34 @@
 div {
-	height: 200px;
-	width: 200px;
+	width: 600px;
+	margin-bottom: 1em;
 }
 
-div#red {
-	background-color: #FF6666;
+div#inventory {
+	border: 2px solid #FF6666;
 }
 
 div#yellow {
-	background-color: #FFFF99;
+	border: 2px solid #FFFF99;
 }
 
 div#blue {
-	background-color: #00CCFF;
+	border: 2px solid #00CCFF;
+}
+
+div#composite {
+	border: 2px solid black;	
+	padding: 2em;
+}
+
+table {
+        border-collapse:collapse;
+}
+
+table, td, th {
+        padding: 2px;
+        border:1px solid black;
+}
+
+span .price {
+	text-align: right;
 }
